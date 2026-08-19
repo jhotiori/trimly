@@ -1,0 +1,166 @@
+/*
+    Global Angular Styles
+    @author jhotiori
+*/
+
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+:root {
+    --bg-base: hsl(0 0% 5%);
+    --bg-surface: hsl(0 0% 10%);
+    --bg-elevated: hsl(0 0% 20%);
+
+    --bg-hover: hsl(0 0% 30%);
+    --bg-highlight: hsl(0 0% 40%);
+
+    --text-primary: #E6E6E6;
+    --text-secondary: #CCCCCC;
+    --text-muted: #999999;
+    --text-subtle: #808080;
+    --text-faint: #4D4D4D;
+
+    --border-base: color-mix(in srgb,
+            var(--bg-base) 80%,
+            var(--text-primary));
+
+    --border-hover: color-mix(in srgb,
+            var(--bg-base) 60%,
+            var(--text-primary));
+
+    --accent-base: #A32929;
+    --accent-hover: #D14747;
+    --accent-highlight: #D65C5C;
+
+    --animation-style: ease-out;
+    --animation-quick: 100ms var(--animation-style);
+    --animation-fast: 200ms var(--animation-style);
+    --animation-medium: 350ms var(--animation-style);
+    --animation-slow: 500ms var(--animation-style);
+
+    --font-size-sm: 0.5rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-sm: 0.075rem;
+    --border-md: 0.1rem;
+    --border-lg: 0.25rem;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xl);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+}
+
+h3 {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-md);
+    color: var(--text-secondary);
+}
+
+.form-section {
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input {
+    padding: 0.75rem 1rem;
+    background-color: var(--bg-surface);
+    border: var(--border-sm) solid var(--border-base);
+    border-radius: var(--radius-sm);
+
+    font: inherit;
+    color: var(--text-secondary);
+
+    transition:
+        border-color var(--animation-fast),
+        box-shadow var(--animation-fast);
+
+    &:focus {
+        border-color: var(--border-hover);
+    }
+}
+
+/*.button {
+    padding: 0.65rem var(--spacing-md);
+    border-radius: var(--radius-sm);
+    border: var(--border-sm) solid transparent;
+
+    font: inherit;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+
+    transition: border-color var(--animation-fast);
+
+    &:hover {
+        border-color: var(--border-hover);
+    }
+}
+
+.button-primary {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+}
+
+.button-secondary {
+    background: var(--text-primary);
+    color: var(--bg-base);
+}
+
+.button-danger {
+    background: #dc3545;
+    color: white;
+}*/
