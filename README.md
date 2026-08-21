@@ -2,13 +2,15 @@
   <img src=".github/assets/banner.png" alt="Trimly">
 </h3>
 
-<h6 align="center">
+<h4 align="center">
   <a href="https://github.com/jhotiori/trimly/tree/main/" rel="noopener noreferrer">Source</a>
   ·
   <a href="https://github.com/jhotiori/trimly/commits/main/" rel="noopener noreferrer">Commits</a>
   ·
   <a href="https://github.com/jhotiori/trimly/pulls" rel="noopener noreferrer">PRs</a>
-</h6>
+  ·
+  <a href="https://github.com/jhotiori/trimly/tree/main/LICENSE.md" rel="noopener noreferrer">License</a>
+</h4>
 
 <p align="center">
   <a href="https://github.com/jhotiori/trimly/stargazers">
@@ -31,13 +33,13 @@
 <hr>
 
 ## 🛠️ Técnologias
-| Área                   | Tecnologias                                            |
-| ---------------------- | ------------------------------------------------------ |
-| **Backend**            | Java (17) · Spring Boot · Spring Data JPA · Spring Security |
-| **Frontend**           | *Angular (19) · Material Design Bootstrap*             |
-| **Banco de dados**     | PostgreSQL                                             |
-| **Infraestrutura**     | AWS *(planejado)*                                      |
-| **Controle de versão** | Git · GitHub                                           |
+| Área                   | Tecnologias                                               |
+| ---------------------- | --------------------------------------------------------- |
+| **Backend**            | Java (17) · SpringBoot (JPA, Security, Validation)   |
+| **Frontend**           | Angular (19) · Bootstrap · Material Design Bootstrap      |
+| **Banco de dados**     | PostgreSQL                                                |
+| **Infraestrutura**     | AWS Cloud                                                 |
+| **Controle de versão** | Git · GitHub                                              |
 
 ## 👥 Equipe
 | Integrante             | Cargo           | Responsabilidade                |
@@ -48,33 +50,35 @@
 | **Evandro**            | Desenvolvedor   | Backend                         |
 
 ## 🧪 Desenvolvimento
-Clone o repositório localmente e navegue até ele:
+Clone o repositório localmente e navegue até a raiz dele:
 ```bash
 git clone https://github.com/jhotiori/trimly
 cd trimly
 ```
 
 ### 🎨 Frontend
+> _Trimly utiliza [**Bun**](https://bun.sh/) como manuseador de pacotes Node, de preferência, é recomendado utilizar ele para o Frontend!_
+
 Navegue até o diretório do Frontend:
 ```bash
 cd frontend
 ```
 
-Instale as dependencias necessárias com seu manuseador de pacotes:
+Instale as dependencias necessárias com seu manuseador de pacotes Node:
 ```bash
-npm install
+bun install
 ```
 
-#### 🔥 Live
+#### Live
 Para rodar a aplicação do front em ambiente de desenvolvimento com auto-carregamento:
 ```bash
-ng serve
+bun start
 ```
 
-#### 🛠️ Build
+#### Build
 Para construir o projeto em modo de produção (otimizado para tamanho e velocidade):
 ```bash
-ng build
+bun build
 ```
 
 ### 🚀 Backend
@@ -83,14 +87,14 @@ Navegue até o diretório do Backend:
 cd backend
 ```
 
-Depois, rode o projeto usando `mvnw`:
+Depois, rode o projeto usando o executavel do Maven `mvnw`
 
-#### 🐧 Linux/macOS
+#### Linux/macOS
 ```bash
 ./mvnw spring-boot:run
 ```
 
-#### 🪟 Windows
+#### Windows
 ```bash
 mvnw.cmd spring-boot:run
 ```
